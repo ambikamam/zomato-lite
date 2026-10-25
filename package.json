@@ -6,12 +6,14 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "db:setup": "node --env-file=.env.local db/setup.mjs"
   },
   "dependencies": {
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "next": "15.5.28"
+    "next": "15.5.28",
+    "@neondatabase/serverless": "1.2.0"
   },
   "devDependencies": {
     "typescript": "^5",
